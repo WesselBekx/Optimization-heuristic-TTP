@@ -1,0 +1,232 @@
+{
+    "Instance": {
+        "MetaData": {
+            "InstanceName": "NL4",
+            "DataType": "A",
+            "Contributor": "Easton, Nemhauser, and Trick",
+            "Date": {
+                "@day": "0",
+                "@month": "0",
+                "@year": "2001"
+            },
+            "Country": null,
+            "Remarks": "Based on National Hockey League",
+            "Lowerbound": {
+                "@infeasibility": "0",
+                "@objective": "0"
+            }
+        },
+        "Structure": {
+            "Format": {
+                "@leagueIds": "0",
+                "numberRoundRobin": "2",
+                "compactness": "C"
+            },
+            "AdditionalGames": null
+        },
+        "ObjectiveFunction": {
+            "Objective": "TR"
+        },
+        "Data": {
+            "Distances": {
+                "distance": [
+                    {
+                        "@dist": "0",
+                        "@team1": "0",
+                        "@team2": "0"
+                    },
+                    {
+                        "@dist": "745",
+                        "@team1": "0",
+                        "@team2": "1"
+                    },
+                    {
+                        "@dist": "665",
+                        "@team1": "0",
+                        "@team2": "2"
+                    },
+                    {
+                        "@dist": "929",
+                        "@team1": "0",
+                        "@team2": "3"
+                    },
+                    {
+                        "@dist": "745",
+                        "@team1": "1",
+                        "@team2": "0"
+                    },
+                    {
+                        "@dist": "0",
+                        "@team1": "1",
+                        "@team2": "1"
+                    },
+                    {
+                        "@dist": "80",
+                        "@team1": "1",
+                        "@team2": "2"
+                    },
+                    {
+                        "@dist": "337",
+                        "@team1": "1",
+                        "@team2": "3"
+                    },
+                    {
+                        "@dist": "665",
+                        "@team1": "2",
+                        "@team2": "0"
+                    },
+                    {
+                        "@dist": "80",
+                        "@team1": "2",
+                        "@team2": "1"
+                    },
+                    {
+                        "@dist": "0",
+                        "@team1": "2",
+                        "@team2": "2"
+                    },
+                    {
+                        "@dist": "380",
+                        "@team1": "2",
+                        "@team2": "3"
+                    },
+                    {
+                        "@dist": "929",
+                        "@team1": "3",
+                        "@team2": "0"
+                    },
+                    {
+                        "@dist": "337",
+                        "@team1": "3",
+                        "@team2": "1"
+                    },
+                    {
+                        "@dist": "380",
+                        "@team1": "3",
+                        "@team2": "2"
+                    },
+                    {
+                        "@dist": "0",
+                        "@team1": "3",
+                        "@team2": "3"
+                    }
+                ]
+            },
+            "COEWeights": null,
+            "Costs": null
+        },
+        "Resources": {
+            "TeamGroups": {
+                "teamGroup": {
+                    "@id": "0",
+                    "@name": "All teams"
+                }
+            },
+            "LeagueGroups": null,
+            "Leagues": {
+                "league": {
+                    "@id": "0",
+                    "@name": "League 0"
+                }
+            },
+            "Teams": {
+                "team": [
+                    {
+                        "@id": "0",
+                        "@league": "0",
+                        "@name": "ATL",
+                        "@teamGroups": "0"
+                    },
+                    {
+                        "@id": "1",
+                        "@league": "0",
+                        "@name": "NYM",
+                        "@teamGroups": "0"
+                    },
+                    {
+                        "@id": "2",
+                        "@league": "0",
+                        "@name": "PHI",
+                        "@teamGroups": "0"
+                    },
+                    {
+                        "@id": "3",
+                        "@league": "0",
+                        "@name": "MON",
+                        "@teamGroups": "0"
+                    }
+                ]
+            },
+            "SlotGroups": null,
+            "Slots": {
+                "slot": [
+                    {
+                        "@id": "0",
+                        "@name": "Slot0"
+                    },
+                    {
+                        "@id": "1",
+                        "@name": "Slot1"
+                    },
+                    {
+                        "@id": "2",
+                        "@name": "Slot2"
+                    },
+                    {
+                        "@id": "3",
+                        "@name": "Slot3"
+                    },
+                    {
+                        "@id": "4",
+                        "@name": "Slot4"
+                    },
+                    {
+                        "@id": "5",
+                        "@name": "Slot5"
+                    }
+                ]
+            }
+        },
+        "Constraints": {
+            "BasicConstraints": null,
+            "CapacityConstraints": {
+                "CA3": [
+                    {
+                        "@intp": "4",
+                        "@max": "3",
+                        "@min": "0",
+                        "@mode1": "H",
+                        "@mode2": "GAMES",
+                        "@penalty": "1",
+                        "@teamGroups1": "0",
+                        "@teamGroups2": "0",
+                        "@type": "HARD"
+                    },
+                    {
+                        "@intp": "4",
+                        "@max": "3",
+                        "@min": "0",
+                        "@mode1": "A",
+                        "@mode2": "GAMES",
+                        "@penalty": "1",
+                        "@teamGroups1": "0",
+                        "@teamGroups2": "0",
+                        "@type": "HARD"
+                    }
+                ]
+            },
+            "GameConstraints": null,
+            "BreakConstraints": null,
+            "FairnessConstraints": null,
+            "SeparationConstraints": {
+                "SE1": {
+                    "@max": "6",
+                    "@min": "1",
+                    "@penalty": "1",
+                    "@teamGroups": "0",
+                    "@type": "HARD"
+                }
+            }
+        }
+    }
+}
